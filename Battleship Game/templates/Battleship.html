@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+	<head><title>Battleship Game</title></head>
+	<style>
+	body{background-image:url("../static/color bg.jpg");}
+	p{font-size: 40px;color:black;}
+	h1{border:3px outset tomato;width :400px;font-size:70px}
+	</style>
+	<body><center>
+		<h1>Battleship Game</h1>
+		<form action = "{{url_for('shoot')}}" method = "POST">
+		<p>O O O O O</p>
+		<p>O O O O O</p>
+		<p>O O O O O</p>
+		<p>O O O O O</p>
+		<label><p style = "margin-top:10px;font-size:20px">X- Coordinate : <input type = "text" name = "x"></p></label>
+		<label><p style = "font-size:20px">Y - Coordinate : <input type = "text" name = "y"></p></label>
+		<br><input type = "submit" value = "SHOOT"></br>
+		</form>
+	</body></center>
+</html>
